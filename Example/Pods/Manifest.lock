@@ -1,0 +1,16 @@
+PODS:
+  - KQTaskNetworkManager (0.1.0)
+
+DEPENDENCIES:
+  - KQTaskNetworkManager (from `../`)
+
+EXTERNAL SOURCES:
+  KQTaskNetworkManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KQTaskNetworkManager: 1ba8ed8a3354a798bbfa8720f7e8379f84e39479
+
+PODFILE CHECKSUM: a655f9a1702e029845a8e38fb6049c26a2043f4a
+
+COCOAPODS: 1.11.3
