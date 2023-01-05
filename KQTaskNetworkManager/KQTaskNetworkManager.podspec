@@ -29,9 +29,13 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '13.0'
 #   s.source_files = 'Classes/Utility/**/*'
     s.source_files = '**/KQTaskNetworkManager/**/*.{swift}'
-  # s.resource_bundles = {
-  #   'KQTaskNetworkManager' => ['KQTaskNetworkManager/Assets/*.png']
-  # }
+#    s.resource_bundles = {
+#     'KQTaskNetworkManager' => ['**/KQTaskNetworkManager/**/*.{png}']
+#   }
+    s.resources = "**/KQTaskNetworkManager/**/*.{pdf,png,jpeg,jpg,storyboard,xib,xcassets}"
+#    s.resource_bundles = {
+#       'KQTaskNetworkManager' => ['SDK/*/*.{xib,storyboard,xcassets}']
+#    }
   # s.source_files = 'Classes/Resources/**/*'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

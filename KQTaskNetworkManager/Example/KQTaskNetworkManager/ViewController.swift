@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import KQTaskNetworkManager
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var TaskImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        
-//        let greetingAnswer = Services.doGreatings(greeting: "Aslamoalikum to KQTaskNetworkManager")
-//        print(greetingAnswer)
+        let image = Services.getResources()
+        if let image = Services.getResources() {
+            TaskImageView.image = image
+        }
+        print(image)
     }
 
     override func didReceiveMemoryWarning() {

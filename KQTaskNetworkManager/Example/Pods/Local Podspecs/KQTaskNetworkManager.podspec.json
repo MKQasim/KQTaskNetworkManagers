@@ -18,5 +18,6 @@
   "platforms": {
     "ios": "13.0"
   },
-  "source_files": "**/KQTaskNetworkManager/**/*.{swift}"
+  "source_files": "**/KQTaskNetworkManager/**/*.{swift}",
+  "resources": "**/KQTaskNetworkManager/**/*.{pdf,png,jpeg,jpg,storyboard,xib,xcassets}"
 }
