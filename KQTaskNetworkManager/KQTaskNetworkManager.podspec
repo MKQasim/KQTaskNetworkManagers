@@ -24,18 +24,11 @@ Pod::Spec.new do |s|
   s.author           = { 'MKQasim' => 'kamqasim1@gmail.com' }
   s.source           = { :git => 'https://github.com/MKQasim/KQTaskNetworkManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-#  s.ios.deployment_target = '13.0'
-#   s.source_files = 'Resources/AppNetworkManager/**/*'
     s.ios.deployment_target = '13.0'
-#   s.source_files = 'Classes/Utility/**/*'
     s.source_files = '**/KQTaskNetworkManager/**/*.{swift}'
-#    s.resource_bundles = {
-#     'KQTaskNetworkManager' => ['**/KQTaskNetworkManager/**/*.{png}']
-#   }
     s.resources = "**/KQTaskNetworkManager/**/*.{pdf,png,jpeg,jpg,storyboard,xib,xcassets}"
-#    s.resource_bundles = {
-#       'KQTaskNetworkManager' => ['SDK/*/*.{xib,storyboard,xcassets}']
-#    }
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # s.source_files = 'Classes/Resources/**/*'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
